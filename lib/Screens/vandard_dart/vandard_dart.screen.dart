@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:maths_tuto_flutter/Screens/vandard_dart/classes/classes_lessons.dart';
 import 'package:maths_tuto_flutter/Screens/vandard_dart/currency_dart/currency_in_dart.dart';
 import 'package:maths_tuto_flutter/Screens/vandard_dart/isoletates/Isola_main.dart';
 import 'package:maths_tuto_flutter/Screens/vandard_dart/streams_dart/example_one.dart';
@@ -65,6 +66,20 @@ class _VandardDartScreenState extends State<VandardDartScreen> {
               },
               child: const Text(
                 "ConCurrency in Dart",
+                style: TextStyle(fontSize: 18),
+              ),
+            ),
+            TextButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const DartClasses(),
+                  ),
+                );
+              },
+              child: const Text(
+                "Classes in Dart",
                 style: TextStyle(fontSize: 18),
               ),
             ),
