@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:maths_tuto_flutter/Screens/vandard_dart/classes/classes_lessons.dart';
 import 'package:maths_tuto_flutter/Screens/vandard_dart/currency_dart/currency_in_dart.dart';
+import 'package:maths_tuto_flutter/Screens/vandard_dart/generics_dart/main_generics_dart.dart';
 import 'package:maths_tuto_flutter/Screens/vandard_dart/isoletates/Isola_main.dart';
 import 'package:maths_tuto_flutter/Screens/vandard_dart/streams_dart/example_one.dart';
 
@@ -80,6 +81,20 @@ class _VandardDartScreenState extends State<VandardDartScreen> {
               },
               child: const Text(
                 "Classes in Dart",
+                style: TextStyle(fontSize: 18),
+              ),
+            ),
+            TextButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const GenericsInDart(),
+                  ),
+                );
+              },
+              child: const Text(
+                "Generics and Collections in Dart",
                 style: TextStyle(fontSize: 18),
               ),
             ),
