@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:maths_tuto_flutter/Screens/Games_fluttter/main_game.dart';
 import 'package:maths_tuto_flutter/Screens/apple_vision_UI/main_apple_vision.dart';
+import 'package:maths_tuto_flutter/Screens/ffi_dart_exam/ffi_main_dart.dart';
 import 'package:maths_tuto_flutter/Screens/render_objects/main._rander_obj.dart';
 import 'package:maths_tuto_flutter/Screens/vectors/vertors_screen.dart';
 
@@ -107,6 +108,20 @@ class _MyHomePageState extends State<MyHomePage> {
               },
               child: const Text(
                 "Render Object with Flutter",
+                style: TextStyle(fontSize: 18),
+              ),
+            ),
+            TextButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const FFIDemo(),
+                  ),
+                );
+              },
+              child: const Text(
+                "Foreign Function Interface with Flutter",
                 style: TextStyle(fontSize: 18),
               ),
             ),
