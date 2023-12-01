@@ -61,7 +61,7 @@ class _VideoCompressTutoState extends State<VideoCompressTuto> {
     });
     MediaInfo? mediaInfo = await VideoCompress.compressVideo(
       path,
-      quality: VideoQuality.DefaultQuality,
+      quality: VideoQuality.Res640x480Quality,
       deleteOrigin: false, // It's false by default
     );
 

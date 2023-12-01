@@ -12,6 +12,7 @@ import 'package:maths_tuto_flutter/Screens/fl_refers/game_score.dart';
 import 'package:maths_tuto_flutter/Screens/media_tuto/video_compr_tuto.dart';
 import 'package:maths_tuto_flutter/Screens/render_objects/main._rander_obj.dart';
 import 'package:maths_tuto_flutter/Screens/vectors/vertors_screen.dart';
+import 'package:maths_tuto_flutter/state_man_tuto/main_screen.dart';
 import 'package:provider/provider.dart';
 
 import 'Screens/udemy_co/udemy_screen.dart';
@@ -204,6 +205,20 @@ class _MyHomePageState extends State<MyHomePage> {
               },
               child: const Text(
                 "Video Compress",
+                style: TextStyle(fontSize: 18),
+              ),
+            ),
+            TextButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const MainStateScreen(),
+                  ),
+                );
+              },
+              child: const Text(
+                "State Management",
                 style: TextStyle(fontSize: 18),
               ),
             ),
