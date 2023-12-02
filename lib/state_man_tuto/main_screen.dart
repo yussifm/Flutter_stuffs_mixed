@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:maths_tuto_flutter/state_man_tuto/basic_state.dart';
 
 class MainStateScreen extends StatelessWidget {
@@ -14,6 +15,9 @@ class MainStateScreen extends StatelessWidget {
       body: SingleChildScrollView(
           child: Column(
         children: [
+          SizedBox(
+            height: 30.h,
+          ),
           TextButton(
             onPressed: () {
               Navigator.push(
