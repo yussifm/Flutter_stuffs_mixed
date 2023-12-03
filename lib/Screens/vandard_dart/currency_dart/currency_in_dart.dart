@@ -10,6 +10,6 @@ class CurrencyInDartVan extends StatefulWidget {
 class _CurrencyInDartVanState extends State<CurrencyInDartVan> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return const Scaffold();
   }
 }

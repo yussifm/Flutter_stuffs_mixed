@@ -26,7 +26,7 @@ class _MediaQScreenState extends State<MediaQScreen> {
       body: Visibility(
           visible: devicePixelRatio >= 2,
           child: Container(
-            child: Text("High resolution"),
+            child: const Text("High resolution"),
           )),
     );
   }

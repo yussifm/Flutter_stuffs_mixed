@@ -1,4 +1,3 @@
-import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:maths_tuto_flutter/Screens/fl_refers/game_score.dart';

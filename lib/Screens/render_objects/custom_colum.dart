@@ -2,6 +2,7 @@ import 'package:flutter/rendering.dart';
 import 'package:flutter/widgets.dart';
 
 class CustomColumnWidget extends MultiChildRenderObjectWidget {
+  @override
   List<Widget> children;
 
   CustomColumnWidget({Key? key, this.children = const []})

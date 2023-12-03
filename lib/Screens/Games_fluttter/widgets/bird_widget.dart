@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class BirdWidget extends StatefulWidget {
   final double birdY;
 
-  BirdWidget({Key? key, required this.birdY}) : super(key: key);
+  const BirdWidget({Key? key, required this.birdY}) : super(key: key);
 
   @override
   State<BirdWidget> createState() => _BirdWidgetState();

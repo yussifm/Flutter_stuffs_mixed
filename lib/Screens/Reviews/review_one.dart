@@ -8,7 +8,7 @@ class ReviewOne extends StatefulWidget {
 }
 
 class _ReviewOneState extends State<ReviewOne> {
-  int _selectedIndex = 1;
+  final int _selectedIndex = 1;
 
   @override
   Widget build(BuildContext context) {

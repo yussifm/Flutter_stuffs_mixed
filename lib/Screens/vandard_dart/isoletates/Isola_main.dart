@@ -27,7 +27,7 @@ class _IsolateMainState extends State<IsolateMain> {
                 person = personData.toList();
               });
             },
-            child: Text("Get Data"),
+            child: const Text("Get Data"),
           ),
           ...person.map(
             (e) => Row(
@@ -61,7 +61,7 @@ Future<Iterable<Person>> getPersons() async {
 }
 
 void _getPerson(SendPort sP) async {
-  final String url = "http://127.0.0.1:5500/api/people1.json";
+  const String url = "http://127.0.0.1:5500/api/people1.json";
   final person = await HttpClient()
       .getUrl(
         Uri.parse(url),

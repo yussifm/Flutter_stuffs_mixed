@@ -5,7 +5,6 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:maths_tuto_flutter/Screens/Games_fluttter/main_game.dart';
 import 'package:maths_tuto_flutter/Screens/Reviews/review_one.dart';
 import 'package:maths_tuto_flutter/Screens/adaptaive_UI/mediaq_screen.dart';
-import 'package:maths_tuto_flutter/Screens/apple_vision_UI/main_apple_vision.dart';
 import 'package:maths_tuto_flutter/Screens/ffi_dart_exam/ffi_main_dart.dart';
 import 'package:maths_tuto_flutter/Screens/fl_refers/dragger_flutter.dart';
 import 'package:maths_tuto_flutter/Screens/fl_refers/game_score.dart';
@@ -15,7 +14,6 @@ import 'package:maths_tuto_flutter/Screens/vectors/vertors_screen.dart';
 import 'package:maths_tuto_flutter/state_man_tuto/main_screen.dart';
 import 'package:provider/provider.dart';
 
-import 'Screens/udemy_co/udemy_screen.dart';
 import 'Screens/vandard_dart/vandard_dart.screen.dart';
 
 void main() {

@@ -1,7 +1,4 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:maths_tuto_flutter/state_man_tuto/basic_state.dart';
 import 'package:uuid/v4.dart';
 
 class BasicStateManage extends StatelessWidget {

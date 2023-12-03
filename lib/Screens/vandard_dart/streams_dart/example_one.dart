@@ -57,7 +57,7 @@ class _ExampleOneState extends State<ExampleOne> {
             child: Container(
               width: 100,
               height: 100,
-              padding: EdgeInsets.all(20),
+              padding: const EdgeInsets.all(20),
               alignment: Alignment.center,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(20),
