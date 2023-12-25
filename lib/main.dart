@@ -5,6 +5,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:maths_tuto_flutter/Screens/Games_fluttter/main_game.dart';
 import 'package:maths_tuto_flutter/Screens/Reviews/review_one.dart';
 import 'package:maths_tuto_flutter/Screens/adaptaive_UI/mediaq_screen.dart';
+import 'package:maths_tuto_flutter/Screens/drawer_challenge/main_drawer.dart';
 import 'package:maths_tuto_flutter/Screens/ffi_dart_exam/ffi_main_dart.dart';
 import 'package:maths_tuto_flutter/Screens/fl_refers/dragger_flutter.dart';
 import 'package:maths_tuto_flutter/Screens/fl_refers/game_score.dart';
@@ -222,6 +223,38 @@ class _MyHomePageState extends State<MyHomePage> {
                 },
                 child: const Text(
                   "Flights Stepper UI",
+                  style: TextStyle(fontSize: 18),
+                ),
+              ),
+              TextButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const MainDrawerScreen(
+                        flip: false,
+                      ),
+                    ),
+                  );
+                },
+                child: const Text(
+                  "Drawer Flipper UI",
+                  style: TextStyle(fontSize: 18),
+                ),
+              ),
+              TextButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const MainDrawerScreen(
+                        flip: true,
+                      ),
+                    ),
+                  );
+                },
+                child: const Text(
+                  "3D Drawer Flipper UI",
                   style: TextStyle(fontSize: 18),
                 ),
               ),
