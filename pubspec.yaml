@@ -45,6 +45,7 @@ dependencies:
   auto_size_text: ^3.0.0
   video_player: ^2.8.1
   uuid: ^4.2.1
+  line_icons: ^2.0.3
 
 dev_dependencies:
   flutter_test:
@@ -83,6 +84,13 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
+  fonts:
+    - family: IbarraRealNova
+      fonts:
+        - asset: assets/fonts/Ibarra_Real_Nova/IbarraRealNova-Regular.ttf
+    - family: Deligne
+      fonts:
+        - asset: assets/fonts/OPTIDeligne-Normal.otf
   # fonts:
   #   - family: Schyler
   #     fonts:

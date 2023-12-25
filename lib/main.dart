@@ -13,6 +13,7 @@ import 'package:maths_tuto_flutter/Screens/flight_page_example/main_flight.dart'
 import 'package:maths_tuto_flutter/Screens/media_tuto/video_compr_tuto.dart';
 import 'package:maths_tuto_flutter/Screens/render_objects/main._rander_obj.dart';
 import 'package:maths_tuto_flutter/Screens/vectors/vertors_screen.dart';
+import 'package:maths_tuto_flutter/Screens/web_go_to_egpty/main_page.dart';
 import 'package:maths_tuto_flutter/state_man_tuto/main_screen.dart';
 import 'package:provider/provider.dart';
 
@@ -142,20 +143,20 @@ class _MyHomePageState extends State<MyHomePage> {
                   style: TextStyle(fontSize: 18),
                 ),
               ),
-              TextButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const FFIDemo(),
-                    ),
-                  );
-                },
-                child: const Text(
-                  "Foreign Function Interface with Flutter",
-                  style: TextStyle(fontSize: 18),
-                ),
-              ),
+              // TextButton(
+              //   onPressed: () {
+              //     Navigator.push(
+              //       context,
+              //       MaterialPageRoute(
+              //         builder: (context) => const FFIDemo(),
+              //       ),
+              //     );
+              //   },
+              //   child: const Text(
+              //     "Foreign Function Interface with Flutter",
+              //     style: TextStyle(fontSize: 18),
+              //   ),
+              // ),
               TextButton(
                 onPressed: () {
                   Navigator.push(
@@ -255,6 +256,20 @@ class _MyHomePageState extends State<MyHomePage> {
                 },
                 child: const Text(
                   "3D Drawer Flipper UI",
+                  style: TextStyle(fontSize: 18),
+                ),
+              ),
+              TextButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => MyMainHomePage(),
+                    ),
+                  );
+                },
+                child: const Text(
+                  "Flutter web",
                   style: TextStyle(fontSize: 18),
                 ),
               ),
