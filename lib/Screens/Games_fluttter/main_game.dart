@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:maths_tuto_flutter/Screens/Games_fluttter/bomber_man.dart';
+import 'package:maths_tuto_flutter/Screens/Games_fluttter/bonfire_game_example/main_bonfire_1.dart';
 import 'package:maths_tuto_flutter/Screens/Games_fluttter/floppy_bird.dart';
 
 class MainGame extends StatelessWidget {
@@ -47,6 +48,21 @@ class MainGame extends StatelessWidget {
               },
               child: const Text(
                 "BomberMan",
+                style: TextStyle(fontSize: 18),
+              ),
+            ),
+          
+            TextButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const MainBonFireOne(),
+                  ),
+                );
+              },
+              child: const Text(
+                "BonFire Game Example 1",
                 style: TextStyle(fontSize: 18),
               ),
             ),
