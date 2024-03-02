@@ -10,10 +10,12 @@ import 'package:maths_tuto_flutter/Screens/ffi_dart_exam/ffi_main_dart.dart';
 import 'package:maths_tuto_flutter/Screens/fl_refers/dragger_flutter.dart';
 import 'package:maths_tuto_flutter/Screens/fl_refers/game_score.dart';
 import 'package:maths_tuto_flutter/Screens/flight_page_example/main_flight.dart';
+import 'package:maths_tuto_flutter/Screens/media_tuto/files_selecter.dart';
 import 'package:maths_tuto_flutter/Screens/media_tuto/video_compr_tuto.dart';
 import 'package:maths_tuto_flutter/Screens/render_objects/main._rander_obj.dart';
 import 'package:maths_tuto_flutter/Screens/vectors/vertors_screen.dart';
 import 'package:maths_tuto_flutter/Screens/web_go_to_egpty/main_page.dart';
+import 'package:maths_tuto_flutter/cross_platforms_uis/main_cp_ui.dart';
 import 'package:maths_tuto_flutter/state_man_tuto/main_screen.dart';
 import 'package:provider/provider.dart';
 
@@ -112,6 +114,20 @@ class _MyHomePageState extends State<MyHomePage> {
                 },
                 child: const Text(
                   "Dart By vandard",
+                  style: TextStyle(fontSize: 18),
+                ),
+              ),
+              TextButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const MainCrossPlatformUi(),
+                    ),
+                  );
+                },
+                child: const Text(
+                  "Cross Platform UIs with flutter",
                   style: TextStyle(fontSize: 18),
                 ),
               ),
@@ -284,6 +300,20 @@ class _MyHomePageState extends State<MyHomePage> {
                 },
                 child: const Text(
                   "State Management",
+                  style: TextStyle(fontSize: 18),
+                ),
+              ),
+              TextButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const FilePickWithSelector(),
+                    ),
+                  );
+                },
+                child: const Text(
+                  "File Selection with File Select package",
                   style: TextStyle(fontSize: 18),
                 ),
               ),

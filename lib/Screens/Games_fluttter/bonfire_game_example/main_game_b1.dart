@@ -1,3 +1,4 @@
+import 'package:bonfire/bonfire.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
@@ -11,8 +12,11 @@ class RPGGameMain extends StatefulWidget {
 class _RPGGameMainState extends State<RPGGameMain> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(),
+    return BonfireWidget(
+      // joystick: Joystick(
+      //   directional: JoystickDirectional(),
+      // ), // required
+      map: WorldMapByTiled(TiledReader.asset('tiled/sample-overworld.json')),
     );
   }
 }
